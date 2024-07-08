@@ -8,7 +8,7 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/PHP/Demo/" class="<?= urlIs('/PHP/Demo/index.php') ? 'bg-gray-900' : 'text-gray-300'; ?> text-grey-300 hover:bg-gray-700 rounded-md  px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
+              <a href="/PHP/Demo/" class="<?= urlIs('/PHP/Demo/controllers/index.php') ? 'bg-gray-900' : 'text-gray-300'; ?> text-grey-300 hover:bg-gray-700 rounded-md  px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
               <a href="/PHP/Demo/about" class="<?= urlIs("/PHP/Demo/controllers/about.php") ? 'bg-gray-900' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
               <a href="/PHP/Demo/contact" class="<?= urlIs("/PHP/Demo/controllers/contact.php") ? 'bg-gray-900' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
             </div>

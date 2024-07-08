@@ -1,6 +1,6 @@
 <?php
 
 $heading = "About Us";
-
-require "../views/about.view.php";
+$uri;
+require "./views/about.view.php";
 ?>
