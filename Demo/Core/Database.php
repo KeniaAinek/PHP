@@ -1,5 +1,10 @@
 <?php
 // Connect to our MySQL database. 
+
+namespace Core;
+
+use PDO;
+
 class Database{
 
     public $connection;
