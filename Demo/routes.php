@@ -14,5 +14,7 @@ $router ->get('/PHP/Demo/contact', 'controllers/contact.php');
 
 $router ->get('/PHP/Demo/notes' ,'controllers/notes/index.php');
 $router ->get('/PHP/Demo/note' ,'controllers/notes/show.php');
+$router ->delete('/PHP/Demo/note', 'controllers/notes/destroy.php');
+
 $router ->get('/PHP/Demo/notes/create' ,'controllers/notes/create.php');
-$router ->delete('/notes', 'controllers/notes/delete.php');
+$router ->post('/PHP/Demo/notes' ,'controllers/notes/store.php');
