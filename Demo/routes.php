@@ -16,5 +16,8 @@ $router ->get('/PHP/Demo/notes' ,'controllers/notes/index.php');
 $router ->get('/PHP/Demo/note' ,'controllers/notes/show.php');
 $router ->delete('/PHP/Demo/note', 'controllers/notes/destroy.php');
 
+$router ->get('/PHP/Demo/note/edit' ,'controllers/notes/edit.php');
+$router ->patch('/PHP/Demo/note', 'controllers/notes/update.php');
+
 $router ->get('/PHP/Demo/notes/create' ,'controllers/notes/create.php');
 $router ->post('/PHP/Demo/notes' ,'controllers/notes/store.php');
