@@ -10,11 +10,10 @@ $currentUserId = 1;
 
 if($_SERVER['REQUEST_METHOD'] === "POST"){
     //form submited. Delete the current note.
-    $note = $db->query('select * from notes where id = :id', [
-        'id' => $_GET['id']
-    ])->findOrFail();
+    $note = $db->query('SELECT * FROM notes WHERE id = :id', [
+        'id' => $_GET['id']])->findOrFail();
     
-    authorize($note['user_id'] === $currentUserId);
+        authorize($note['user_id'] === $currentUserId);
 
     $db ->query('DELETE FROM notes WHERE id = :id',[ 'id' => $_POST['id']
 ]);
@@ -23,7 +22,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
 }else {
 
 
-$note = $db->query('select * from notes where id = :id', [
+$note = $db->query('SELECT * from notes where id = :id', [
     'id' => $_GET['id']
 ])->findOrFail();
 
