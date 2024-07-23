@@ -23,7 +23,8 @@ $router ->get('/PHP/Demo/notes/create' ,'controllers/notes/create.php');
 $router ->post('/PHP/Demo/notes' ,'controllers/notes/store.php');
 
 $router ->get('/PHP/Demo/register', 'controllers/registration/create.php')->only('guest');
-$router ->post('/PHP/Demo/register', 'controllers/registration/store.php');
+$router ->post('/PHP/Demo/register', 'controllers/registration/store.php')->only('guest');
 
-$router ->get('/PHP/Demo/login', 'controllers/sessions/create.php')->only('guest');
-$router ->post('/PHP/Demo/login', 'controllers/sessions/store.php')->only('guest');
+$router ->get('/PHP/Demo/login', 'controllers/session/create.php')->only('guest');
+$router ->post('/PHP/Demo/session', 'controllers/session/store.php')->only('guest');
+$router ->delete('/PHP/Demo/session', 'controllers/session/destroy.php')->only('auth');
