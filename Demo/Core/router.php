@@ -57,7 +57,7 @@ class Router{
             {
                 Middleware::resolve($route['middleware']);
 
-                return require base_path('Http/controllers/'.$route['controller']);
+                return require base_path('Http/controllers/'. $route['controller']);
             }
         }
         $this -> abort();
