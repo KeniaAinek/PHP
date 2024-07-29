@@ -10,7 +10,9 @@
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="/PHP/Demo/" class="<?= urlIs('/PHP/Demo/') ? 'bg-gray-900' : 'text-gray-300'; ?> text-grey-300 hover:bg-gray-700 rounded-md  px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
             <a href="/PHP/Demo/about" class="<?= urlIs("/PHP/Demo/about") ? 'bg-gray-900' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+            <?php if($_SESSION['user'] ?? false) : ?>
             <a href="/PHP/Demo/notes" class="<?= urlIs("/PHP/Demo/notes") ? 'bg-gray-900' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Notes</a>
+            <?php endif; ?>
             <a href="/PHP/Demo/contact" class="<?= urlIs("/PHP/Demo/contact") ? 'bg-gray-900' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
           </div>
         </div>
@@ -61,7 +63,7 @@
           <?php if ($_SESSION['user'] ?? false) : ?>
             <div class="ml-3">
               <form action="/PHP/Demo/session" method="POST">
-                <imput type="hidden" name="_method" value="DELETE" />
+                <input type="hidden" name="_method" value="DELETE" />
                 <button class="text-white">Log Out</button>
               </form>
             <?php endif; ?>

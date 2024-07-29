@@ -3,6 +3,7 @@
 use Core\App;
 use Core\Database;
 use Core\Validator;
+use Core\Authenticator;
 
 $db = App::resolve(Database::class);
 
@@ -29,9 +30,8 @@ if (!empty($errors)){
 $user = $db->query('SELECT * FROM users WHERE email = :email',['email' => $email])-> find();
 
 if($user){
-    //then someone with that email already exist?
-     //If yes, redirect to login
      header('location: /login');
+     exit();
 }else{
     // If no, save  on the DB  
     $db->query('INSERT INTO users(email, password) VALUES(:email, :password)',[
@@ -40,8 +40,8 @@ if($user){
     ]);
 
     //mark the user has logged in
-    login($user);
+    (new Authenticator)->login($user);
 
-    header('location: /');
+    redirect('/');
     exit();
 }
