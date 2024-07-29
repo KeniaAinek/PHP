@@ -1,7 +1,7 @@
 <?php
+ use Core\Authenticator;
 
+(new Authenticator)->logout();
 
-logout();
-
-header('location: /');
+redirect('/');
 exit();
