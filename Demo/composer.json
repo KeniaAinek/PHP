@@ -1,0 +1,27 @@
+{
+    "name": "k.castro/php",
+    "authors": [
+        {
+            "name": "k.castro",
+            "email": "k.castro@mefasa.org"
+        }
+    ],
+    "require": {
+        "illuminate/collections": "^8.83"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.23"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

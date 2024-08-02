@@ -1,5 +1,6 @@
 <?php
 namespace Core;
+
 use Core\Middleware\Guest;
 use Core\Middleware\Auth;
 use Core\Middleware\Middleware;
@@ -61,6 +62,11 @@ class Router{
             }
         }
         $this -> abort();
+    }
+
+    public function previousUrl()
+    {
+        return $_SERVER['HTTP_REFERER'];
     }
 
     function abort($code = 404){
