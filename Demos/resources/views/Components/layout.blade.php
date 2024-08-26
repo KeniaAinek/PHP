@@ -27,9 +27,9 @@
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <x-nav href="/Demos/public/" :active="request()->is('/')">Home</x-nav>
-                <x-nav href="/Demos/public/about" :active="request()->is('about')">About</x-nav>
-                <x-nav href="/Demos/public/contact" :active="request()->is('contact')">Contact</x-nav>
+                <x-nav href="/" :active="request()->is('/')">Home</x-nav>
+                <x-nav href="/jobs" :active="request()->is('jobs')">Jobs</x-nav>
+                <x-nav href="/contact" :active="request()->is('contact')">Contact</x-nav>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
                 </svg>
               </button>
-  
+
               <!-- Profile dropdown -->
               <div class="relative ml-3">
                 <div>
@@ -52,8 +52,8 @@
                     <img class="h-8 w-8 rounded-full" src="https://laracasts.com/images/lary-ai-face.svg" alt="">
                   </button>
                 </div>
-  
-                
+
+
               </div>
             </div>
           </div>
@@ -74,14 +74,14 @@
           </div>
         </div>
       </div>
-  
+
       <!-- Mobile menu, show/hide based on menu state. -->
       <div class="md:hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <a href="/Demos/public/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
-          <a href="/Demos/public/about" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
-          <a href="/Demos/public/contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+          <a href="/php/Demos/public/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+          <a href="/php/Demos/public/jobs" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Jobs</a>
+          <a href="/php/Demos/public/contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
         </div>
         <div class="border-t border-gray-700 pb-3 pt-4">
           <div class="flex items-center px-5">
@@ -100,11 +100,11 @@
               </svg>
             </button>
           </div>
-         
+
         </div>
       </div>
     </nav>
-  
+
     <header class="bg-white shadow">
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{$heading}}</h1>
@@ -116,6 +116,6 @@
       </div>
     </main>
   </div>
-  
+
 </body>
 </html>
