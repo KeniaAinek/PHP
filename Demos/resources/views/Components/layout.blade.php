@@ -28,7 +28,7 @@
               <div class="ml-10 flex items-baseline space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <x-nav href="/Demos/public/" :active="request()->is('/')">Home</x-nav>
-                <x-nav href="/Demos/public/about" :active="request()->is('about')">About</x-nav>
+                <x-nav href="/Demos/public/jobs" :active="request()->is('jobs')">Jobs</x-nav>
                 <x-nav href="/Demos/public/contact" :active="request()->is('contact')">Contact</x-nav>
               </div>
             </div>
@@ -80,7 +80,7 @@
         <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
           <a href="/Demos/public/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
-          <a href="/Demos/public/about" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+          <a href="/Demos/public/jobs" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
           <a href="/Demos/public/contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
         </div>
         <div class="border-t border-gray-700 pb-3 pt-4">
