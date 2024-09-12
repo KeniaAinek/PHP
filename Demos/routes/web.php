@@ -5,10 +5,10 @@ use App\Http\Controllers\JobController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SessionController;
 
-/* Route::get('test', function (){
+Route::get('test', function (){
     
     return 'Posted';
-}); */
+});
 
 Route::view('/', 'home');
 Route::view('/contact', 'contact');
