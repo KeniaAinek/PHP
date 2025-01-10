@@ -8,7 +8,7 @@
     @vite(['resources/js/app.js'])
 </head>
 <body>
-   
+
 <div class="min-h-full">
     <nav class="bg-gray-800">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -19,7 +19,7 @@
             </div>
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
-                <x-nav href="/" :active="request()->is('/')">Home</x-nav>
+                <x-nav href="/" :active="request()->is('home')">Home</x-nav>
                 <x-nav href="/jobs" :active="request()->is('jobs')">Jobs</x-nav>
                 <x-nav href="/contact" :active="request()->is('contact')">Contact</x-nav>
               </div>

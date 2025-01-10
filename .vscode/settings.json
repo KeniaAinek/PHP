@@ -19,5 +19,8 @@
         "titleBar.inactiveBackground": "#bd083d99",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#bd083d"
+    "peacock.color": "#bd083d",
+    "editor.tokenColorCustomizations": {
+        
+    }
 }

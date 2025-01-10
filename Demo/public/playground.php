@@ -4,6 +4,6 @@ use Illuminate\Support\Collection;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-new collection([
-    'one', 'two', 'three'
+new Collection([
+    'one', 'two', 'three', 'four'
 ]);

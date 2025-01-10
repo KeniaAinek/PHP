@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05113ace8a7dece231e3e2e5f0294453",
+    "content-hash": "ca2de484fd283ff5854a6c6d95a0d3c4",
     "packages": [
         {
             "name": "illuminate/collections",
@@ -252,6 +252,50 @@
                 "source": "https://github.com/php-fig/simple-cache/tree/master"
             },
             "time": "2017-10-23T01:57:42+00:00"
+        },
+        {
+            "name": "swisnl/illuminate-collections",
+            "version": "8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swisnl/illuminate-collections.git",
+                "reference": "f01e08d3234ae4ea959aac938d6acbc013365b46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swisnl/illuminate-collections/zipball/f01e08d3234ae4ea959aac938d6acbc013365b46",
+                "reference": "f01e08d3234ae4ea959aac938d6acbc013365b46",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/collections": "^8.0"
+            },
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jasper Zonneveld",
+                    "email": "jasper@swis.nl",
+                    "homepage": "https://www.swis.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Metapackage to import illuminate/collections, with fallback to illuminate/support for older PHP/Laravel versions.",
+            "homepage": "https://github.com/swisnl/illuminate-collections",
+            "keywords": [
+                "collections",
+                "illuminate",
+                "swisnl"
+            ],
+            "support": {
+                "issues": "https://github.com/swisnl/illuminate-collections/issues",
+                "source": "https://github.com/swisnl/illuminate-collections/tree/8.0.0"
+            },
+            "abandoned": "illuminate/collections",
+            "time": "2020-11-06T12:23:56+00:00"
         }
     ],
     "packages-dev": [
@@ -684,9 +728,6 @@
             ],
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "pest": {
                     "plugins": [
                         "Pest\\Plugins\\Coverage",
@@ -699,6 +740,9 @@
                     "providers": [
                         "Pest\\Laravel\\PestServiceProvider"
                     ]
+                },
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
                 }
             },
             "autoload": {
