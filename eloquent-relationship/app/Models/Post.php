@@ -9,6 +9,8 @@ class Post extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     public function comments()
     {
         return $this->hasMany(Comment::class);
@@ -16,6 +18,6 @@ class Post extends Model
 
     public function tags()
     {
-       return $this->belongsToMany(Tag::class);
+       return $this->belongsToMany(Tag::class)->withTimestamps();
     }
 }
